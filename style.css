@@ -5,23 +5,24 @@ body{
 #container{
     width: 1000px;
     height: 550px;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(bgImg.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(images/calculator.jpg);
     margin: 20px auto;
 }
 #calculator{
-    width:320px;
+    width: 320px;
     height: 520px;
     background-color: #eaedef;
-    margin:0 auto;
+    margin: 0 auto;
     top: 20px;
     position: relative;
-    box-shadow: 4px 8px 0 rgba(0,0,0,0.2), 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 5px;
+    box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #result{
     height: 120px;
 }
 #keyboard{
-    height:400px;
+    height: 400px;
 }
 
 .operator, .number, .empty{
@@ -35,16 +36,18 @@ body{
     font-size: 15px;
 }
 
-.number, .empty {
+.number, .empty{
     background-color: #eaedef;
 }
 
-.number, .operator {
+.number, .operator{
     cursor: pointer;
 }
+
 .operator.active, .number.active{
-    font-size:13px;
+    font-size: 13px;
 }
+
 .operator:focus, .number:focus, .empty:focus{
     outline: 0;
 }
